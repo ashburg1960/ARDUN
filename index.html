@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ardun | Premium Rattan Furniture & Organic Living</title>
+  <meta name="description" content="Discover organic craftsmanship and curated natural living through Ardun's signature rattan collections.">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  
+  <!-- Link to CSS File -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <img src="images/ardunlogo.jpg" alt="Ardun Logo" class="logo-img">
+      </div>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+
+  <div class="backdrop" id="backdrop"></div>
+  
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast">
+    <i class="fa-solid fa-check-circle"></i>
+    <span id="toast-msg">Item added to cart</span>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <img src="images/ardunlogo.jpg" alt="Ardun Logo" class="logo-img">
+      </a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#collection">Collection</a>
+        <a href="#about">Our Story</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="icon-btn cart-btn" id="cartBtn" aria-label="Open Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content reveal">
+      <span class="hero-tagline">Handcrafted Luxury</span>
+      <h1>Timeless Weaving<br>for Modern Living.</h1>
+      <p>Discover organic craftsmanship and curated natural living through our signature rattan collections, ethically sourced and masterfully woven.</p>
+      <div class="hero-buttons">
+        <a href="#collection" class="btn-primary">Explore Collection</a>
+        <a href="#about" class="btn-secondary">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-image-wrapper reveal">
+      <div class="hero-image">
+        <!-- High-quality unpslash image of aesthetic interior -->
+        <img src="images/brand.jpg" alt="Luxurious Rattan Interior">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / VALUES SECTION -->
+  <section class="about section" id="about">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h2>Rooted in Nature</h2>
+        <p>Every piece at Ardun tells a story of tradition, nature, and meticulous artistry. We partner with master weavers to create furniture that breathes life into your modern spaces while honoring the earth.</p>
+        <div class="features">
+          <div class="feature">
+            <i class="fa-solid fa-leaf"></i>
+            <span>Sustainably Sourced</span>
+          </div>
+          <div class="feature">
+            <i class="fa-solid fa-hands-holding-circle"></i>
+            <span>Handcrafted Artistry</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-image reveal">
+        <img src="images/brand2.jpg" alt="Details of woven rattan">
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS / COLLECTION -->
+  <section class="products section" id="collection">
+    <div class="section-heading reveal">
+      <span class="subheading">Curated Selection</span>
+      <h2>Organic Luxury Pieces</h2>
+    </div>
+    <div class="product-grid" id="productGrid">
+      <!-- Products injected via JS -->
+    </div>
+  </section>
+
+  <!-- CART SIDEBAR -->
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Selection</h3>
+      <button class="icon-btn" id="closeCart" aria-label="Close Cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="cart-items-container">
+      <div class="cart-empty" id="cartEmpty">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <p>Your cart is empty.</p>
+        <button class="btn-secondary" id="continueShopping">Continue Shopping</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <!-- Cart items injected via JS -->
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-summary">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">₦0</span>
+        </div>
+        <div class="summary-row total">
+          <span>Total</span>
+          <strong id="cartTotal">₦0</strong>
+        </div>
+      </div>
+      <button class="btn-primary checkout-btn" id="checkoutBtn">
+        <i class="fa-brands fa-whatsapp"></i> Order via WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="images/ardunlogo.jpg" alt="Ardun Logo" class="logo-img">
+        <p>Elevating modern living with timeless, handcrafted rattan designs.</p>
+      </div>
+      <div class="footer-links">
+        <div class="link-group">
+          <h4>Explore</h4>
+          <a href="#home">Home</a>
+          <a href="#collection">Collection</a>
+          <a href="#about">Our Story</a>
+        </div>
+        <div class="link-group">
+          <h4>Connect</h4>
+          <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i> Pinterest</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ardun Furniture. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Link to JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
